@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Cars for Rent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="car-list-container">
+    <h2>Available Cars for Rent</h2>
+    <div class="car-item">
+        <h3>Audi RS</h3>
+        <p>Model: RS</p>
+        <p>Price per day: &#8377;200</p>
+        <button onclick="openBookingModal('Audi RS')">Book</button>
+    </div>
+    <div class="car-item">
+        <h3>suzuki X5</h3>
+        <p>Model: X5</p>
+        <p>Price per day: &#8377;250</p>
+        <button onclick="openBookingModal('BMW X5')">Book</button>
+    </div>
+    <div class="car-item">
+        <h3>BMW X5</h3>
+        <p>Model: X5</p>
+        <p>Price per day: &#8377;230</p>
+        <button onclick="openBookingModal('BMW X5')">Book</button>
+    </div>
+    <div class="car-item">
+        <h3>FORD X5</h3>
+        <p>Model: X5</p>
+        <p>Price per day: &#8377;260</p>
+        <button onclick="openBookingModal('BMW X5')">Book</button>
+    </div>
+    <div class="car-item">
+        <h3>TOYOTO X5</h3>
+        <p>Model: X5</p>
+        <p>Price per day: &#8377;300</p>
+        <button onclick="openBookingModal('BMW X5')">Book</button>
+    </div>
+    <div class="contact-link">
+        <a href="contact.html" class="contact-btn">Contact Us</a>
+    </div>
+    <!-- Add more car items as needed -->
+</div>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeBookingModal()">&times;</span>
+        <h3>Book Car</h3>
+        <p id="selectedCar"></p>
+        <form id="bookingForm">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

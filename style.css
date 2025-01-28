@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+section {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin: 5px 0;
+}
+
+input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container Styling */
+.login-container {
+    background: #ffffff;
+    padding: 20px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #2c3e50;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label, .login-container input, .login-container button {
+    margin: 8px 0;
+}
+
+.login-container input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-container button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #2980b9;
+}
+*{
+    padding:0px;
+    margin:0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: linear-gradient(#380036,#0CBABA);
+
+}
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin:0 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    background:rgba(0,0,0,0.2);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.6);
+
+}
+h1{
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: left;
+    color:antiquewhite;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+    padding-bottom: 15px;
+}
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box label, .gender-title{
+    width:95%;
+    color:#fff;
+    font-weight: bold;
+    margin:5px 0;
+}
+.gender-title{
+    font-size:16px;
+}
+.input-box input{
+    height:40px;
+    width:95%;
+    padding:0 10px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    outline: none;
+}
+.input-box input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.gender-category{
+    color:gainsboro;
+}
+.gender-category label,.gender-category input{
+    cursor:pointer;
+}
+.alert p{
+    font-size:14px;
+    font-style: italic;
+    color:#fff;
+    margin:5px 0;
+    padding:10px;
+    line-height:1.5;
+}
+.alert a{
+    font-weight: bold;
+    text-decoration: none;
+    color:skyblue;
+}
+.alert a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color:#380036;
+}
+.button-container{
+    margin:15px 0;
+}
+.button-container button{
+ width:100%;
+ margin-top:10px;
+ padding:10px;
+ display:block;
+ font-size:20px;
+ color:#fff;
+ border:none;
+ border-radius: 5px;
+ background-image: linear-gradient(to right,#aa076b,#61045f);
+ cursor:pointer;
+ transition:0.3s;
+
+}
+.button-container button:hover{
+    background-image: linear-gradient(to right,#61045f,#aa076b);
+
+}
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width:100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+}
